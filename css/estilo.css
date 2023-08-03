@@ -12,6 +12,7 @@ body{
     letter-spacing: 0.08em;
     line-height: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
 
 }
 
@@ -53,11 +54,7 @@ body{
     background-color: black;
 }
  */
-.container-header-nav-ul{
-    display: block;
-    justify-content: space-between;
-    
-}
+
 
 /* MENU HAMBURGUER */
 
@@ -109,6 +106,8 @@ body{
     padding: 0;
     line-height: 1.8em;
     margin: 0;
+    display: block;
+    justify-content: space-between;
 }
 
 
@@ -218,18 +217,21 @@ body{
 
 }
 
+.container-section-cards{
+    width: 100%;
+}
+
 .container-article-cards{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;
-    align-content: center;
+    align-items: center;
     text-align: center;
     padding: 2em;
     background-color: #C6C4F2;
-    margin: auto auto 2em ;
+    margin: auto;
     border-radius: 10%;
-    width: 250px;
-    height: 250px;
+    width: 70%;
+    margin-bottom: 2em;
 
 }
 
@@ -273,14 +275,13 @@ body{
 }
 
 
-.margot-robbie{
+.margot-robbie {
     color:var(--cor-primaria);
     background-image: url(/img/fundo3.jpg);
-    background-size: contain;
+    background-size: cover;
     text-align: center;
     padding: 0.5em;
 }
-
 
 
 .container-section-atriz img{
