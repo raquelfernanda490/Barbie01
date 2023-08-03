@@ -1,0 +1,295 @@
+:root{
+    --cor-primaria: #BF2C7D;
+}
+
+
+body{
+
+    background-size: contain;
+    background-repeat: repeat;
+    font-size: 0.8em;
+    margin: 0;
+    letter-spacing: 0.08em;
+    line-height: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.container{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    ;
+}
+
+
+/* LOGO */
+
+.container-header-hero{
+    width: 11em;
+    /* height: 4em; */
+    margin: auto;
+    display: flex;
+    padding: 0.49em;
+}
+
+.container-header-hero:hover{
+    transform: scale(1.2);
+
+}
+
+
+/* .container-header nav ul{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top:75px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: black;
+}
+ */
+.container-header-nav-ul{
+    display: block;
+    justify-content: space-between;
+    
+}
+
+/* MENU HAMBURGUER */
+
+/*.menu-icon{
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.nav-icon{
+    background-color: var(--cor-primaria);
+    display: inline-block;
+    height: 2px;
+    width: 26px;
+    position: relative;
+}
+
+.nav-icon::after,
+.nav-icon::before{
+    content: "";
+    background-color: var(--cor-primaria);
+    display: inline-block;
+    height: 2px;
+    width: 26px;
+    position: absolute;
+}
+
+.nav-icon::after{
+    transform: translateY(8px);
+    background-color: var(--cor-primaria);
+}
+
+
+.nav-icon::before{
+    transform: translateY(-8px);
+    background-color: var(--cor-primaria);
+}
+
+.menu-btn:checked ~ .container-header-nav-ul{
+    max-height: 100vh;
+
+}*/
+
+
+.container-header-nav-ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: var(--cor-primaria);
+    padding: 0;
+    line-height: 1.8em;
+    margin: 0;
+}
+
+
+
+.container-header-nav-ul a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.4em;
+    margin: 0;
+    text-transform: uppercase;
+    
+}
+
+.container-header-nav a:hover{
+    background-color: color-mix(in srgb, var(--cor-primaria), #fff 20%);
+    transition: 0.3s;
+}
+
+.container-main{ 
+    background-image: url(/img/fundo3.jpg);
+    box-sizing: border-box;
+    background-size: contain;
+    padding: 2em;
+}
+
+.container-main h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-main p, h1{
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.container-main-button{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding-top: 2.5em ;
+
+}
+
+
+.trailer-btn{
+    background-color:var(--cor-primaria);
+    margin: auto;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.trailer-btn a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.trailer-btn:hover{
+    background-color: color-mix(in srgb, var(--cor-primaria), #fff 20%);
+    transition: 0.3s;
+}
+
+
+.container-main-iframe{
+    display: none;
+/*     aspect-ratio: 16;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 0.8em; */
+
+}
+.container-section-boneca{
+    margin: 1.5em;
+    text-align: left;
+    color: var(--cor-primaria);
+}
+
+.container-boneca-img{
+    display: none;
+}
+
+.container-section-filmes{
+    text-align: center;
+    color: #fff;
+    background-color: #C6C4F2;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.container-boneca-img-filme img{
+    width: 18em;
+    display: flex;
+    align-content: center;
+    margin: auto;
+    padding: 1em;
+    border-radius: 50%;
+    width: 7em;
+
+
+}
+
+.container-article-cards{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    padding: 2em;
+    background-color: #C6C4F2;
+    margin: auto auto 2em ;
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
+
+}
+
+.container-article-text{
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.container-boneca-img-filme img:hover{
+    transform: scale(1.11);
+}
+
+
+
+.container-section-filmes-name a{
+    display: block;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    line-height: 2em;
+}
+
+.container-section-filmes-name a:hover{
+    background-color: #f2f2f28f;
+}
+
+
+.container-section-filmes-name{
+    background-image: url(/img/fundo-brilhante-rosa-pastel-e-azul.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+}
+
+
+.container-img{
+    display: none;
+}
+
+
+.margot-robbie{
+    color:var(--cor-primaria);
+    background-image: url(/img/fundo3.jpg);
+    background-size: contain;
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+
+.container-section-atriz img{
+    display: none;
+}
+
+
+footer{
+    text-align: center;
+    color:var(--cor-primaria);
+    background-color: #fff;
+}
