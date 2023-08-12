@@ -13,19 +13,9 @@ body{
     line-height: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
-
-}
-
-.container{
-    display: inline-block;
-    justify-content: center;
-    width: 100%;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
+    background-image: url(/img/fundo3.jpg);
     
 }
-
 
 /* LOGO */
 
@@ -43,61 +33,18 @@ body{
 }
 
 
-/* .container-header nav ul{
-    position: absolute;
+/*HEADER NAV/ MENU*/
+
+.container{
+    display: inline-block;
+    justify-content: center;
     width: 100%;
-    left: 0;
-    right: 0;
-    top:75px;
-    max-height: 0;
-    overflow: hidden;
-    background-color: black;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    
 }
- */
-
-
-/* MENU HAMBURGUER */
-
-/*.menu-icon{
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-}
-
-.nav-icon{
-    background-color: var(--cor-primaria);
-    display: inline-block;
-    height: 2px;
-    width: 26px;
-    position: relative;
-}
-
-.nav-icon::after,
-.nav-icon::before{
-    content: "";
-    background-color: var(--cor-primaria);
-    display: inline-block;
-    height: 2px;
-    width: 26px;
-    position: absolute;
-}
-
-.nav-icon::after{
-    transform: translateY(8px);
-    background-color: var(--cor-primaria);
-}
-
-
-.nav-icon::before{
-    transform: translateY(-8px);
-    background-color: var(--cor-primaria);
-}
-
-.menu-btn:checked ~ .container-header-nav-ul{
-    max-height: 100vh;
-
-}*/
-
 
 .container-header-nav-ul{
     list-style-type: none;
@@ -110,7 +57,9 @@ body{
     justify-content: space-between;
 }
 
-
+.container-header li:nth-child(3){
+    display: none;
+}
 
 .container-header-nav-ul a{
     text-decoration: none;
@@ -127,24 +76,28 @@ body{
     transition: 0.3s;
 }
 
-.container-main{ 
+/* INICIO / SINOPSE */
+
+.container-main-sinopse{ 
     background-image: url(/img/fundo3.jpg);
     box-sizing: border-box;
     background-size: contain;
     padding: 2em;
 }
 
-.container-main h1{
+.container-main-sinopse h1{
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.container-main p, h1{
+.container-main-sinopse p, h1{
     color: var(--cor-primaria);
     font-size: 1.5rem;
     text-align: center;
     line-height: 2rem;
 }
+
+/* INICIO / SINOPSE / TRAILER*/
 
 .container-main-button{
     display: flex;
@@ -179,62 +132,58 @@ body{
 
 
 .container-main-iframe{
+    aspect-ratio: 16;
     display: none;
-/*     aspect-ratio: 16;
-    display: block;
     text-align: center;
     margin: auto;
-    padding: 0.8em; */
+    padding: 0.8em;
 
 }
+
+/*TEXTO E IMAGEM - BONECA*/
+
 .container-section-boneca{
-    margin: 1.5em;
+    padding: 1.5em;
     text-align: left;
     color: var(--cor-primaria);
+    background-color: #fff;
 }
 
 .container-boneca-img{
     display: none;
 }
 
-.container-section-filmes{
-    text-align: center;
-    color: #fff;
-    background-color: #C6C4F2;
-    margin: 0;
-    padding: 0.5em;
-}
-
 .container-boneca-img-filme img{
     width: 18em;
     display: flex;
+    flex-direction: column;
     align-content: center;
     margin: auto;
     padding: 1em;
     border-radius: 50%;
     width: 7em;
-
-
 }
 
+
+/* CARDS / SAIBA MAIS*/
 .container-section-cards{
     width: 100%;
+    background-color: #C6C4F2;
 }
 
 .container-article-cards{
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    padding: 2em;
     background-color: #C6C4F2;
-    margin: auto;
-    border-radius: 10%;
-    width: 70%;
+    margin: 0;
     margin-bottom: 2em;
 
 }
 
+
+.container-article-cards img:hover{
+    transform: scale(1.2);
+}
 .container-article-text{
     line-height: 1.3em;
     letter-spacing: 0.1em;
@@ -244,40 +193,39 @@ body{
     color: #fff;
 }
 
-.container-boneca-img-filme img:hover{
-    transform: scale(1.11);
+.btn-cards{
+    background-color:var(--cor-primaria);
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 0.8em;
+    border: none;
+    border-radius: 0.5rem;
 }
 
-
-
-.container-section-filmes-name a{
-    display: block;
+.btn-cards a{
+    color:#fff;
     text-decoration: none;
-    color: var(--cor-primaria);
-    line-height: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
 }
 
-.container-section-filmes-name a:hover{
-    background-color: #f2f2f28f;
-}
-
-
-.container-section-filmes-name{
-    background-image: url(/img/fundo-brilhante-rosa-pastel-e-azul.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    text-align: left;
+.btn-cards:hover{
+    background-color: color-mix(in srgb, var(--cor-primaria), #fff 20%);
+    transition: 0.3s;
 }
 
 
-.container-img{
+/*FILMES DE ANIMAÇÃO*/
+.container-section-animacao{
     display: none;
 }
 
 
+/*ATRIZ / MARGOT ROBBIE*/
 .margot-robbie {
     color:var(--cor-primaria);
-    background-image: url(/img/fundo3.jpg);
     background-size: cover;
     text-align: center;
     padding: 0.5em;
@@ -288,9 +236,207 @@ body{
     display: none;
 }
 
-
+/*FOOTER*/
 footer{
     text-align: center;
     color:var(--cor-primaria);
     background-color: #fff;
 }
+
+
+@media screen and (min-width: 768px) {
+    .container-header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-header-nav-ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+        margin: auto;
+        margin-right: 3em;
+        background-color: #fff;
+    }
+
+    .container-header-nav-ul a{
+        color: var(--cor-primaria);
+        border: 0.1em solid var(--cor-primaria);
+        border-radius: 0.5em;
+        padding: 0.8em;
+    }
+
+    .container-header-nav-ul a:hover{
+        color: #fff;
+        background-color: var(--cor-primaria);
+    }
+
+    .container-main-button{
+        display: none;
+    }
+
+    .container-main-iframe{
+    /* display: flex; */
+    aspect-ratio: 16/9;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 0.8em;
+    border-radius: 2em;
+
+}
+    .container-boneca-img{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+
+    .container-article-cards{
+    margin: 2em;
+    text-align: center;
+    align-content: center;
+
+}
+    .container-section-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin: auto;
+    margin-bottom: 3em;
+    }
+
+    .container-section-atriz img{
+        display: inline-flex;
+        width: 12.5em;
+        height: 11.87em;
+        border-radius: 50%;
+        border: 0.2em solid var(--cor-primaria);
+        margin-right: 3em;
+    }
+
+    .container-section-atriz{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 3em;
+
+
+    }
+    .margot-robbie p{
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    header{
+        font-size: 1.3em;
+    }
+    main{
+        font-size: 1.8em;
+        line-height: 1.6em;
+        background-color: #fff;
+    }
+
+    .container-header li:nth-child(3){
+        display: block;
+    }
+
+
+    .container-section-boneca{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    margin: 0;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+    .container-article-cards:nth-child(1){
+        display: none;
+    }
+
+
+    .container-article-cards{
+    margin: 1em;
+    padding: 1em;
+    align-content: center;
+    width: 80%
+    
+    
+}
+    .container-article-cards p{
+        font-size: 0.8em;
+        
+    }
+.container-section-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 1em;
+    margin: auto;
+    margin-bottom: 3em;
+    align-content: center;
+    
+    }
+
+
+    .container-section-animacao-color{
+        background-color: #fff;
+    }
+
+
+    .container-section-animacao{
+        background-color: #fff;
+        display: inline;
+        margin: 2em;
+        text-align: center;
+        color: var(--cor-primaria);
+        width: 80%;
+        font-size: 0.8em;
+    }
+
+    .container-img img:hover{
+        transform: scale(1.2);
+    }
+
+    .container-img img{
+        width: 7em;
+        height: 9em;
+        margin: 0.7em .5em;
+        border-radius: 50%;
+        border: 0.2em solid #C6C4F2;
+    }
+
+    .margot-robbie{
+        text-align: center;
+        margin: 0;
+        padding: 1em;
+        background-image: url(/img/fundo3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container-section-atriz{
+        display: inline-block;
+        font-size: 1em;
+        line-height: 1.6em;
+        letter-spacing: 0.012em;
+        align-content: center;
+        margin: 0;
+        
+    }
+
+    .container-section-atriz img{
+        width: 400px;
+        height: 250px;
+        border-radius: 2em;
+        margin: auto;
+    }
+
+}
+
