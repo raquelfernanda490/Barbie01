@@ -19,7 +19,7 @@ body{
 
 /* LOGO */
 
-.container-header-hero{
+.container_header_hero{
     width: 11em;
     /* height: 4em; */
     margin: auto;
@@ -27,7 +27,7 @@ body{
     padding: 0.49em;
 }
 
-.container-header-hero:hover{
+.container_header_hero:hover{
     transform: scale(1.2);
 
 }
@@ -46,7 +46,7 @@ body{
     
 }
 
-.container-header-nav-ul{
+.container_header_nav_ul{
     list-style-type: none;
     text-align: center;
     background-color: var(--cor-primaria);
@@ -57,11 +57,11 @@ body{
     justify-content: space-between;
 }
 
-.container-header li:nth-child(3){
+.container_header li:nth-child(3){
     display: none;
 }
 
-.container-header-nav-ul a{
+.container_header_nav_ul a{
     text-decoration: none;
     color: white;
     display: block;
@@ -71,26 +71,26 @@ body{
     
 }
 
-.container-header-nav a:hover{
+.container_header_nav a:hover{
     background-color: color-mix(in srgb, var(--cor-primaria), #fff 20%);
     transition: 0.3s;
 }
 
 /* INICIO / SINOPSE */
 
-.container-main-sinopse{ 
+.container_main_sinopse{ 
     background-image: url(/img/fundo3.jpg);
     box-sizing: border-box;
     background-size: contain;
     padding: 2em;
 }
 
-.container-main-sinopse h1{
+.container_main_sinopse h1{
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.container-main-sinopse p, h1{
+.container_main_sinopse p, h1{
     color: var(--cor-primaria);
     font-size: 1.5rem;
     text-align: center;
@@ -99,7 +99,7 @@ body{
 
 /* INICIO / SINOPSE / TRAILER*/
 
-.container-main-button{
+.container_main_button{
     display: flex;
     justify-content: center;
     margin: 2rem;
@@ -108,7 +108,7 @@ body{
 }
 
 
-.trailer-btn{
+.trailer_btn{
     background-color:var(--cor-primaria);
     margin: auto;
     padding: 1.5rem;
@@ -116,7 +116,7 @@ body{
     border-radius: 0.5rem;
 }
 
-.trailer-btn a{
+.trailer_btn a{
     color:#fff;
     text-decoration: none;
     font-size: 1rem;
@@ -125,13 +125,13 @@ body{
     letter-spacing: 0.07em;
 }
 
-.trailer-btn:hover{
+.trailer_btn:hover{
     background-color: color-mix(in srgb, var(--cor-primaria), #fff 20%);
     transition: 0.3s;
 }
 
 
-.container-main-iframe{
+.container_main_iframe{
     aspect-ratio: 16;
     display: none;
     text-align: center;
@@ -142,18 +142,18 @@ body{
 
 /*TEXTO E IMAGEM - BONECA*/
 
-.container-section-boneca{
+.container_section_boneca{
     padding: 1.5em;
     text-align: left;
     color: var(--cor-primaria);
     background-color: #fff;
 }
 
-.container-boneca-img{
+.container_boneca_img{
     display: none;
 }
 
-.container-boneca-img-filme img{
+.container_boneca_img-filme img{
     width: 18em;
     display: flex;
     flex-direction: column;
@@ -166,12 +166,12 @@ body{
 
 
 /* CARDS / SAIBA MAIS*/
-.container-section-cards{
+.container_section_cards{
     width: 100%;
     background-color: #C6C4F2;
 }
 
-.container-article-cards{
+.container_article_cards{
     display: flex;
     flex-direction: column-reverse;
     background-color: #C6C4F2;
@@ -181,10 +181,10 @@ body{
 }
 
 
-.container-article-cards img:hover{
+.container_article_cards img:hover{
     transform: scale(1.2);
 }
-.container-article-text{
+.container_article_text{
     line-height: 1.3em;
     letter-spacing: 0.1em;
     margin: auto;
@@ -193,7 +193,7 @@ body{
     color: #fff;
 }
 
-.btn-cards{
+.btn_cards{
     background-color:var(--cor-primaria);
     margin: auto;
     margin-bottom: 2em;
@@ -202,7 +202,7 @@ body{
     border-radius: 0.5rem;
 }
 
-.btn-cards a{
+.btn_cards a{
     color:#fff;
     text-decoration: none;
     font-size: 1em;
@@ -211,20 +211,20 @@ body{
     letter-spacing: 0.07em;
 }
 
-.btn-cards:hover{
+.btn_cards:hover{
     background-color: color-mix(in srgb, var(--cor-primaria), #fff 20%);
     transition: 0.3s;
 }
 
 
 /*FILMES DE ANIMAÇÃO*/
-.container-section-animacao{
+.container_section_animacao{
     display: none;
 }
 
 
 /*ATRIZ / MARGOT ROBBIE*/
-.margot-robbie {
+.margot_robbie {
     color:var(--cor-primaria);
     background-size: cover;
     text-align: center;
@@ -232,7 +232,7 @@ body{
 }
 
 
-.container-section-atriz img{
+.container_section_atriz img{
     display: none;
 }
 
@@ -245,13 +245,13 @@ footer{
 
 
 @media screen and (min-width: 768px) {
-    .container-header{
+    .container_header{
         display:flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .container-header-nav-ul{
+    .container_header_nav_ul{
         display: flex;
         justify-content: space-between;
         gap: 3em;
@@ -260,23 +260,23 @@ footer{
         background-color: #fff;
     }
 
-    .container-header-nav-ul a{
+    .container_header_nav_ul a{
         color: var(--cor-primaria);
         border: 0.1em solid var(--cor-primaria);
         border-radius: 0.5em;
         padding: 0.8em;
     }
 
-    .container-header-nav-ul a:hover{
+    .container_header_nav_ul a:hover{
         color: #fff;
         background-color: var(--cor-primaria);
     }
 
-    .container-main-button{
+    .container_main_button{
         display: none;
     }
 
-    .container-main-iframe{
+    .container_main_iframe{
     /* display: flex; */
     aspect-ratio: 16/9;
     display: block;
@@ -287,7 +287,7 @@ footer{
     border-radius: 2em;
 
 }
-    .container-boneca-img{
+    .container_boneca_img{
     display: flex;
     width: 80%;
     align-items: center;
@@ -295,13 +295,13 @@ footer{
 }
 
 
-    .container-article-cards{
+    .container_article_cards{
     margin: 2em;
     text-align: center;
     align-content: center;
 
 }
-    .container-section-cards{
+    .container_section_cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
@@ -309,7 +309,7 @@ footer{
     margin-bottom: 3em;
     }
 
-    .container-section-atriz img{
+    .container_section_atriz img{
         display: inline-flex;
         width: 12.5em;
         height: 11.87em;
@@ -318,7 +318,7 @@ footer{
         margin-right: 3em;
     }
 
-    .container-section-atriz{
+    .container_section_atriz{
         display: flex;
         flex-direction: row;
         margin: auto;
@@ -326,7 +326,7 @@ footer{
 
 
     }
-    .margot-robbie p{
+    .margot_robbie p{
         text-align: left;
     }
 }
@@ -343,12 +343,12 @@ footer{
         background-color: #fff;
     }
 
-    .container-header li:nth-child(3){
+    .container_header li:nth-child(3){
         display: block;
     }
 
 
-    .container-section-boneca{
+    .container_section_boneca{
     display: grid;
     grid-template-columns: 6fr 6fr;
     align-items: center;
@@ -357,12 +357,12 @@ footer{
     padding-bottom: 6em;
 }
 
-    .container-article-cards:nth-child(1){
+    .container_article_cards:nth-child(1){
         display: none;
     }
 
 
-    .container-article-cards{
+    .container_article_cards{
     margin: 1em;
     padding: 1em;
     align-content: center;
@@ -370,11 +370,11 @@ footer{
     
     
 }
-    .container-article-cards p{
+    .container_article_cards p{
         font-size: 0.8em;
         
     }
-.container-section-cards{
+.container_section_cards{
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     gap: 1em;
@@ -385,12 +385,12 @@ footer{
     }
 
 
-    .container-section-animacao-color{
+    .container_section_animacao_color{
         background-color: #fff;
     }
 
 
-    .container-section-animacao{
+    .container_section_animacao{
         background-color: #fff;
         display: inline;
         margin: 2em;
@@ -400,11 +400,11 @@ footer{
         font-size: 0.8em;
     }
 
-    .container-img img:hover{
+    .container_img img:hover{
         transform: scale(1.2);
     }
 
-    .container-img img{
+    .container_img img{
         width: 7em;
         height: 9em;
         margin: 0.7em .5em;
@@ -412,7 +412,7 @@ footer{
         border: 0.2em solid #C6C4F2;
     }
 
-    .margot-robbie{
+    .margot_robbie{
         text-align: center;
         margin: 0;
         padding: 1em;
@@ -421,7 +421,7 @@ footer{
         background-repeat: no-repeat;
     }
 
-    .container-section-atriz{
+    .container_section_atriz{
         display: inline-block;
         font-size: 1em;
         line-height: 1.6em;
@@ -431,7 +431,7 @@ footer{
         
     }
 
-    .container-section-atriz img{
+    .container_section_atriz img{
         width: 400px;
         height: 250px;
         border-radius: 2em;
