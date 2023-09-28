@@ -13,7 +13,7 @@ body{
     line-height: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
-    background-image: url(./img/fundo3.jpg);
+    background-image: url(../img/fundo3.jpg);
     
 }
 
@@ -79,7 +79,7 @@ body{
 /* INICIO / SINOPSE */
 
 .container_main_sinopse{ 
-    background-image: url(.img/fundo3.jpg);
+    background-image: url(../img/fundo3.jpg);
     box-sizing: border-box;
     background-size: contain;
     padding: 2em;
